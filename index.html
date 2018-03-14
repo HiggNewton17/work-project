@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Page Title</title>
+  <title>Wheatstone Bridge Application</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
 
@@ -28,11 +28,14 @@
       </label>
 
       <label for="tempCoeffRes">TCR
-        <input id="tempCoeffRes" placeholder="Temperature Coefficient" type="number"></input>
+        <select name="TCR" id="tempCoeffRes">
+          <option value="0.004" selected>Copper</option>
+          <option value="0.0266">Balco</option>
+        </select>
       </label>
 
       <label for="deltaT">ΔT
-        <input id="strain" placeholder="Change in Temperature" type="number"></input>
+        <input id="deltaT" placeholder="Change in Temperature" type="number"></input>
       </label>
 
       <label for="ohmsPerInch">Ω/in
