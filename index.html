@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+
+</head>
+<body>
+  <h1>Wheatstone Bridge Temperature and Balance Compensation</h1>
+
+  <container id="tempComp">
+    <h2>Temperature Compensation</h2>
+    <div>
+      <label for="gageFactor">K
+        <input id="gageFactor" placeholder="Gage Factor" type="number"></input>
+      </label>
+
+
+      <label for="bridgeResistance">R
+        <input id="bridgeResistance" placeholder="Bridge Resistance" type="number"></input>
+      </label>
+
+      <label for="strain">Σ
+        <input id="strain" placeholder="Microstrain" type="number"></input>
+      </label>
+
+      <label for="tempCoeffRes">TCR
+        <input id="tempCoeffRes" placeholder="Temperature Coefficient" type="number"></input>
+      </label>
+
+      <label for="deltaT">ΔT
+        <input id="strain" placeholder="Change in Temperature" type="number"></input>
+      </label>
+
+      <label for="ohmsPerInch">Ω/in
+        <input id="ohmsPerInch" placeholder="Ohms per Inch" type="number"></input>
+      </label>
+    </div>
+    <div>
+      <p>(K * R * E)/(TCR * ΔT * Ω/in) = Inches of wire</p>
+
+    </div>
+
+
+  </container>
+  <script src="app.js"></script>
+</body>
+</html>
