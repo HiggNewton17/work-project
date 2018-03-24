@@ -1,13 +1,18 @@
-let gageFactor = document.querySelector('#gageFactor > input')
-let bridgeResistance = document.querySelector('#')
-let strain = document.querySelector('#')
-let tempCoeffRes = document.querySelector('#tempCoeffRes > value')
-let deltaT = document.querySelector('#')
-let ohmsPerInch = document.querySelector('#')
+let gageFactor = document.querySelector('#gageFactor');
+let bridgeResistance = document.querySelector('#bridgeResistance');
+let strain = document.querySelector('#strain');
+let tempCoeffRes = document.querySelector('#tempCoeffRes');
+let deltaT = document.querySelector('#deltaT');
+let ohmsPerInch = document.querySelector('#ohmsPerInch');
 
 //if microstrain <= 85 don't perform balance
 
-function result() {
-  let inchesOfWire = ("gageFactor" * "bridgeResistance" * "strain") / ("tempCoeffRes" * "deltaT" * "ohmsPerInch");
-  console.log("inchesOfWire");
+function result(){
+  console.log(gageFactor.value);
 }
+
+function update() {
+gageFactor.addEventListener('input', result);
+}
+
+update();
